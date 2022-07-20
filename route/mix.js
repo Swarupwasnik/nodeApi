@@ -1,7 +1,7 @@
 let express=require('express');
-let mixController=require("../components/mix");
+let mixController=require("../Components/mix");
 let mixrouter=express.Router();
 
-mixrouter.route('/mix')
+mixrouter.route("/mix")
 .get(mixController.apicontroller)
 module.exports=mixrouter;
